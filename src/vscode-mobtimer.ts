@@ -64,10 +64,11 @@ export class VscodeMobTimer {
     // Every second, update the status bar with the current time with seconds
     console.log("update");  
     setInterval(() => {
-      console.log("Clicking ");
-      const text = `[${Controller.frontendMobTimer.secondsRemainingString} ${Controller.createListOfParticipantsWithRoleEmojisPrepended()} ]`; //$(clock) 
-      this._statusBarItem.text = text;
-    }, 1000); // 1000 ms = 1 second
+		console.log("Clicking ");
+		// ${Controller.createListOfParticipantsWithRoleEmojisPrepended(
+		const text = `[${Controller.frontendMobTimer.secondsRemainingString}  ]`; //$(clock)
+		this._statusBarItem.text = text;
+	}, 1000); // 1000 ms = 1 second
     this._statusBarItem.show();
   }
 
