@@ -1,12 +1,8 @@
-try {
-	require("module-alias/register");
-} catch (e) {
-	console.log("module-alias import error !");
-}
+
 import * as vscode from "vscode";
-import { EXTENSION_CONSTANT } from "constant";
-import { LeftPanelWebview } from "providers/left-webview-provider";
-import { VscodeMobTimer } from "vscode-mobtimer";
+import { EXTENSION_CONSTANT } from "./constant";
+import { LeftPanelWebview } from "./providers/left-webview-provider";
+import { VscodeMobTimer } from "./vscode-mobtimer";
 export function activate(context: vscode.ExtensionContext) {
   const debug = context.extensionMode === vscode.ExtensionMode.Development;
   if (debug) {
