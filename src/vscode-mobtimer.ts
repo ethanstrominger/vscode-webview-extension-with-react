@@ -64,7 +64,7 @@ export class VscodeMobTimer {
     // Every second, update the status bar with the current time with seconds
     console.log("update");  
     setInterval(() => {
-		console.log("Clicking ");
+		console.log("Ticking ");
 		// ${Controller.createListOfParticipantsWithRoleEmojisPrepended(
 		const text = `[${Controller.frontendMobTimer.secondsRemainingString}  ]`; //$(clock)
 		this._statusBarItem.text = text;
